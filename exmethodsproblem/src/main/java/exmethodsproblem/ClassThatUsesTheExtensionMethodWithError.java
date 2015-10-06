@@ -4,7 +4,7 @@ import java.util.Date;
 
 import lombok.experimental.ExtensionMethod;
 
-@ExtensionMethod(value = { ClassWithStaticMethods.class }, suppressBaseMethods = false)
+@ExtensionMethod(value = { ClassWithStaticMethods.class }, suppressBaseMethods = true)
 public class ClassThatUsesTheExtensionMethodWithError {
 
 	private static Convert<Date, String> getAnonymousClass() {
