@@ -28,7 +28,4 @@ public class ClassWithStaticMethods {
 		return isNull(object) ? null : formatter.parse(asString(object));
 	}
 
-	public static boolean isNullOrEmpty(Object object) {
-		return isNull(object) || asString(object).isEmpty();
-	}
 }
